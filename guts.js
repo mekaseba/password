@@ -8,21 +8,10 @@ let optionOne = document.getElementById("option-one")
 let optionTwo = document.getElementById("option-two")
 
 password.addEventListener("click", function() {
+    for (let i = 0; i < 15; i++) {
     const randomOne = Math.floor(Math.random() * characters.length)
     const randomTwo = Math.floor(Math.random() * characters.length)
     optionOne.textContent = `${characters[randomOne]}`
     optionTwo.textContent = `${characters[randomTwo]}` 
-})
+}})
 
-//what i found online, then rewatched array videos:
-// randomly generated N = 40 length array 0 <= A[N] <= 39
-//Array.from({length: 40}, () => Math.floor(Math.random() * 40));
-
-
-//these v is the closest i could come up with but they didnt work
-
-   // const randomOne = Math.floor(Math.random() * characters.length[8]) 
-   // const randomTwo = Math.floor(Math.random[8]() * characters.length)
-    //const randomOne = Math.floor(Math.random() * characters.length) +[8]
-    //const randomTwo[8] = Math.floor(Math.random() * characters.length)
-//const randomOne = Math.floor[8](Math.random() * characters.length) 
